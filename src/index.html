@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Quiz</title>
+    <link
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="titles">So you want to test your knowledge ...</h1>
+          <h4 class="sub-titles mt-4">Select the parameters for your Quiz</h4>
+          <form method="post" action="" class="ccform">
+            <h5>Category:</h5>
+            <div class="ccfield-prepend">
+              <select
+                class="ccformfield"
+                name="category"
+                required
+                id="category"
+              >
+                <option value="any">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="10">Entertainment: Books</option>
+                <option value="11">Entertainment: Film</option>
+                <option value="12">Entertainment: Music</option>
+                <option value="13">Entertainment: Musicals & Theatres</option>
+                <option value="14">Entertainment: Television</option>
+                <option value="15">Entertainment: Video Games</option>
+                <option value="16">Entertainment: Board Games</option>
+                <option value="17">Science & Nature</option>
+                <option value="18">Science: Computers</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="20">Mythology</option>
+                <option value="21">Sports</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="24">Politics</option>
+                <option value="25">Art</option>
+                <option value="26">Celebrities</option>
+                <option value="27">Animals</option>
+                <option value="28">Vehicles</option>
+                <option value="29">Entertainment: Comics</option>
+                <option value="30">Science: Gadgets</option>
+                <option value="31">
+                  Entertainment: Japanese Anime & Manga
+                </option>
+                <option value="32">Entertainment: Cartoon & Animations</option>
+              </select>
+            </div>
+            <h5>Difficulty:</h5>
+            <div class="ccfield-prepend">
+              <select
+                class="ccformfield"
+                name="difficulty"
+                required
+                id="difficulty"
+              >
+                <option value="any">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+            <h5>Type:</h5>
+            <div class="ccfield-prepend">
+              <select class="ccformfield" name="type" required id="type">
+                <option value="any">Any Type</option>
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True/False</option>
+              </select>
+            </div>
+            <div class="ccfield-prepend">
+              <!-- <input class="ccbtn" type="submit" value="Submit" /> -->
+              <button
+                type="button"
+                style="border-radius: 72px"
+                class="btn btn-dark mt-5 btn-style"
+                id="quiz"
+              >
+                <span>START QUIZ</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Inicio Quiz -->
+      <div class="container-fluid mt-4 quiz-font">
+        <div class="row d-flex flex-column" id="quiz-container"></div>
+      </div>
+      <!--Fin Quiz -->
+    </main>
+  </body>
+</html>
