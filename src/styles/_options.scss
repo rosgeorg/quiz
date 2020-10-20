@@ -1,0 +1,36 @@
+$bg_color: #f29107;
+$font_color: black;
+$font_color_2: #fff;
+
+.options {
+  @include btn-style;
+
+  .titles {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .sub-titles {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  form div {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    select {
+      color: $font_color;
+      background: $font_color_2;
+      border: none;
+      padding: 15.5px;
+      width: 100%;
+      display: block;
+      font-family: "Lato", Arial, sans-serif;
+      font-size: 14px;
+    }
+  }
+}

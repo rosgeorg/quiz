@@ -1,0 +1,7 @@
+.quiz-questions {
+  @include btn-style;
+
+  .quiz-font {
+    font-size: larger;
+  }
+}
